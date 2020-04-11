@@ -51,8 +51,8 @@ AddEventHandler("DRP_CarWash:YesCleanCar", function(carwash)
 
 	if carwash then
 		FreezeEntityPosition(vehicle, true)
-		exports['drp_progressBars']:startUI(15000, "Washing Car...")
-		Wait(15000)
+		exports['drp_progressBars']:startUI(DRPGarages.timer, "Washing Car...")
+		Wait(DRPGarages.timer)
 		FreezeEntityPosition(vehicle, false)
 		WashDecalsFromVehicle(vehicle, 1.0)
 		SetVehicleDirtLevel(vehicle, 0.0)
