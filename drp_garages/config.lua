@@ -5,6 +5,7 @@ DRPGarages.Carwash = true -- Toggle the carwash functionality.
 
 DRPGarages.CarImpound = true -- Toggle the CarImpound functionality.
 DRPGarages.CarImpoundPrice = 200
+DRPGarages.timer = 15000 -- Timer for the car wash (Mili seconds)
 
 
 DRPGarages.Impound = {
